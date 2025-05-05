@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Countdown Timer</title>
+ <link rel="stylesheet" href="countdown.css">
+</head>
+<body>
+  <div class="main">
+    <div class="overlay">
+      <button class="mode-toggle" onclick="toggleMode()">Toggle Mode</button>
+      <h1 class="title">We are coming soon</h1>
+      <h2 id="end-date">Not Set</h2>
+
+      <div class="col">
+        <div>
+          <input type="text" readonly value="0"><br><label>Days</label>
+        </div>
+        <div>
+          <input type="text" readonly value="0"><br><label>Hours</label>
+        </div>
+        <div>
+          <input type="text" readonly value="0"><br><label>Mins</label>
+        </div>
+        <div>
+          <input type="text" readonly value="0"><br><label>Sec</label>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <label for="date-input">Set Countdown End Date:</label>
+        <input type="datetime-local" id="date-input">
+        <button onclick="startCountdown()">Start</button>
+      </div>
+    </div>
+  </div>
+<script src="countdown.js"></script>
+</body>
+</html>
